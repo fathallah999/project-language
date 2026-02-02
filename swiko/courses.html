@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LinguaWorld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index..html" class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <span>Lingua<span class="highlight">World</span></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index..html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="services.html" class="nav-link"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="courses.html" class="nav-link active"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Explore our wide range of language courses designed for every level</p>
+            <div class="breadcrumb">
+                <a href="index..html">Home</a>
+                <span>/</span>
+                <span>Courses</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Filter -->
+    <section class="course-filter">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label>Language:</label>
+                    <select class="filter-select">
+                        <option value="">All Languages</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="japanese">Japanese</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Level:</label>
+                    <select class="filter-select">
+                        <option value="">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Type:</label>
+                    <select class="filter-select">
+                        <option value="">All Types</option>
+                        <option value="self-paced">Self-Paced</option>
+                        <option value="live">Live Classes</option>
+                        <option value="certification">Certification Prep</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary">
+                    <i class="fas fa-search"></i> Filter
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-grid-section">
+        <div class="container">
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">🇺🇸</div>
+                        <span class="course-badge beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>English for Beginners</h3>
+                        <p>Start your English journey with fundamental grammar, vocabulary, and conversation skills.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-book"></i> 48 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$199</span>
+                                <span class="current">$149</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">🇪🇸</div>
+                        <span class="course-badge intermediate">Intermediate</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Spanish Conversation</h3>
+                        <p>Improve your speaking skills with native speakers through interactive dialogue practice.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-book"></i> 32 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$179</span>
+                                <span class="current">$129</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">🇫🇷</div>
+                        <span class="course-badge advanced">Advanced</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>French Business Language</h3>
+                        <p>Master professional French for business meetings, emails, and presentations.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 10 weeks</span>
+                            <span><i class="fas fa-book"></i> 40 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$249</span>
+                                <span class="current">$199</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">🇩🇪</div>
+                        <span class="course-badge beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>German Fundamentals</h3>
+                        <p>Build a strong foundation in German with essential grammar and everyday vocabulary.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-book"></i> 48 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$189</span>
+                                <span class="current">$149</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">🇨🇳</div>
+                        <span class="course-badge intermediate">Intermediate</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Mandarin Chinese</h3>
+                        <p>Expand your Chinese skills with advanced characters, tones, and cultural insights.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 16 weeks</span>
+                            <span><i class="fas fa-book"></i> 64 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$299</span>
+                                <span class="current">$249</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 6 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">🇯🇵</div>
+                        <span class="course-badge beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Japanese for Beginners</h3>
+                        <p>Learn Hiragana, Katakana, and basic Kanji while building conversational skills.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 14 weeks</span>
+                            <span><i class="fas fa-book"></i> 56 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$229</span>
+                                <span class="current">$179</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 7 - IELTS -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">📝</div>
+                        <span class="course-badge certification">Certification</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>IELTS Preparation</h3>
+                        <p>Comprehensive preparation for all IELTS sections with practice tests and strategies.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-book"></i> 40 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$349</span>
+                                <span class="current">$279</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 8 - TOEFL -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">📝</div>
+                        <span class="course-badge certification">Certification</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>TOEFL Mastery</h3>
+                        <p>Expert-led TOEFL preparation with full-length practice tests and score boosting tips.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 10 weeks</span>
+                            <span><i class="fas fa-book"></i> 50 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$379</span>
+                                <span class="current">$299</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 9 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-flag">🇮🇹</div>
+                        <span class="course-badge beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Italian Language & Culture</h3>
+                        <p>Discover the beauty of Italian through language, cuisine, art, and traditions.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 10 weeks</span>
+                            <span><i class="fas fa-book"></i> 40 lessons</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original">$199</span>
+                                <span class="current">$159</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path Section -->
+    <section class="learning-path">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Learning Paths</span>
+                <h2 class="section-title">Structured Learning Journey</h2>
+                <p class="section-subtitle">Follow our recommended paths to achieve fluency faster</p>
+            </div>
+            <div class="path-grid">
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business Professional</h3>
+                    <p>Master business communication in your target language</p>
+                    <span class="path-duration">6-12 months</span>
+                </div>
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Travel & Tourism</h3>
+                    <p>Learn essential phrases for confident travel experiences</p>
+                    <span class="path-duration">3-6 months</span>
+                </div>
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Prepare for academic success in a foreign language</p>
+                    <span class="path-duration">12+ months</span>
+                </div>
+                <div class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Conversational Fluency</h3>
+                    <p>Focus on speaking naturally with native speakers</p>
+                    <span class="path-duration">6-9 months</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>Contact us for custom courses tailored to your specific needs</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-white btn-lg">Contact Us</a>
+                    <a href="services.html" class="btn btn-outline-white btn-lg">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index..html" class="logo">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>Lingua<span class="highlight">World</span></span>
+                    </a>
+                    <p>Empowering global communication through innovative language education and cultural exchange.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index..html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Language Courses</a></li>
+                        <li><a href="services.html">Private Tutoring</a></li>
+                        <li><a href="services.html">Corporate Training</a></li>
+                        <li><a href="services.html">Translation</a></li>
+                        <li><a href="services.html">Certification</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education Street, Global City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@linguaworld.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri: 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LinguaWorld. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
